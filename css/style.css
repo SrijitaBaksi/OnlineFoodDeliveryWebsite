@@ -1,0 +1,301 @@
+/* css reset */
+*{
+    margin:0;
+    padding:0;
+}
+html{
+  scroll-behavior:smooth;
+}
+/* css variables */
+:root{
+    --navbar-height:59px;
+}
+
+/* navigation bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position:sticky;
+    top:0px;
+
+}
+/* nav bar: logo and image */
+#logo{
+   margin:-28px 20px;
+
+}
+#logo img{
+    height: 73px;
+    width:73px;
+    margin:24px 25px;
+
+}
+/* nav bar: list items */
+#navbar ul{
+    display:flex;
+}
+
+#navbar::before{
+    content:"";
+    background-color:black;
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+    z-index: -1;
+    opacity:0.5;
+
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    display:block;
+    color:white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding:8px 20px;
+    margin:15px 15px;
+    
+
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+
+}
+
+
+/*home section  */
+#home{
+    display:flex;
+    flex-direction: column;
+    height:590px;
+    padding: 3px 15px;
+    justify-content: center;
+    text-align: left;
+    /* align-items:center; */
+}
+#home::before{
+    content:"";
+    background:url('../bgrnd1.jpg') no-repeat center center/cover;
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#home h1{
+    color:white;
+    text-align:left;
+}
+#home p{
+    padding:8px 30px;
+    color:white;
+    text-align: left;
+    font-size: 1.3rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+/* services section */
+#services{
+    margin:15px 34px;
+    display:flex;
+}
+#services-container{
+
+    margin:34px 15px;
+    padding: 15px 4px;
+   
+}
+#services-container h1{
+
+    text-shadow: 5px 5px rgb(177, 168, 168);
+   
+}
+
+
+#services .box{
+  margin:19px 39px;
+  padding:14px 10px;
+  border-radius: 23px;
+  background-color: #f1e9ee;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  box-shadow: 7px 5px 3px 3px brown;
+  
+  
+}
+#services .box:hover{
+    transform:scale(1.2);
+    
+  }
+#services .box img{
+    height:150px;
+    display:block;
+    margin:auto;
+  }
+  #services .box p{
+    font-size: 1.0rem;
+    font-weight: bold;
+  }
+
+  /* our menu section */
+  #menu-section{
+    height: 900px;
+  }
+  #menu-section h1{
+    text-shadow: 5px 5px  rgb(177, 168, 168);
+  }
+  #menu-section::before{
+    content:"";
+    background:url('../indian food.jpg') no-repeat center center/cover;
+    position:absolute;
+    height:120%;
+    width:100%;
+    z-index: -2;
+    opacity:0.5;
+  }
+  #menu{
+    display:flex;
+    flex-direction:column;
+    margin:4px 10px;
+    padding:5px 70px;
+
+  }
+  #menu .menu-items1{
+    display:flex;
+    margin:20px 20px;
+    padding:21px 50px;
+    background-color: #f1e9ee;
+    border-radius: 15px;
+    justify-content: space-between;
+    box-shadow: 7px 5px 3px 3px brown;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  #menu .menu-items2{
+    display:flex;
+    margin:20px 20px;
+    flex-direction:row-reverse;
+    padding:21px 50px;
+    background-color:  rgb(233, 200, 220);
+    border-radius: 15px;
+    justify-content: space-between;
+    box-shadow: 7px 5px 3px 3px brown;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+ 
+#menu .menu-items1 img {
+    display:block;
+    height:100px;
+    width:150px;
+}
+#menu .menu-items2 img {
+    display:block;
+    height:100px;
+    width:150px;
+}
+#menu1{
+    margin:2px 15px;
+    padding:6px 18px;
+  }
+  #menu2{
+    margin:2px 15px;
+    padding:6px 18px;
+  }
+  #menu3{
+    margin:2px 15px;
+    padding:6px 18px;
+  }
+  #menu4{
+    margin:2px 15px;
+    padding:6px 18px;
+  }
+
+  /* contact us section */
+  #contact{
+    position:relative
+  }
+  #contact h1{
+    text-shadow: 5px 5px  rgb(177, 168, 168);
+  }
+  #contact::before{
+    content: "";
+    position:absolute;
+    height:100%;
+    width:100%;
+    background: url('../contact\ us\ .img.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity:0.5;
+  }
+  #contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+  }
+  #contact-box input,
+  #contact-box textarea{
+    width:100%;
+    padding:0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+  }
+  #contact-box form{
+    width:40%;
+  }
+  #contact-box label{
+    font-size: 1.3rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+  
+
+
+
+/* footer */
+footer{
+    background:brown;
+    color:white;
+    padding:13px 20px;
+}
+/* utility classes */
+.h-primary{
+    font-size: 3.3rem;
+    padding:5px 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding:13px 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.btn{
+    display:block;
+    width:126px;
+    height:37px;
+    padding:5px 15px;
+    margin:10px 30px;
+    border:2px solid white;
+    background-color: rgb(185, 82, 82);
+    color:white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border-radius: 15px;
+}
+.btn:hover{
+    color:black;
+    background-color: rgb(224, 175, 175);
+}
+.center{
+    text-align: center;
+}

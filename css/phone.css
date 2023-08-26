@@ -1,0 +1,43 @@
+/* body{
+    background-color: red;
+} */
+/* navbar */
+#navbar{
+    flex-direction:column;
+    
+}
+#navbar ul li a{
+    font-size: 1rem;
+    padding:0px 7px;
+}
+/* home */
+#home{
+    height:300px;
+}
+#home::before{
+    height:488px;
+}
+#home p{
+    font-size: 15px;
+}
+
+/* services  */
+#services{
+    flex-direction:column;
+}
+#services.box img{
+    width:20px;
+    height:15px;
+}
+
+/* menu */
+
+/* contact us */
+
+/* footer */
+/* utility classes */
+.h-primary{
+    font-size: 2.5rem;
+    padding:8px 25px;
+}
+
