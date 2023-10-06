@@ -48,7 +48,6 @@
   text-align: center;
   transform: scale(0.94);
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
-  /* display: inline-block; */
   margin-left: 23px;
   opacity: 0;
   filter: blur(4px);
@@ -250,6 +249,7 @@ html {
 }
 
 #home::before {
+
   content: "";
   background: url('../bgrnd1.jpg') no-repeat center center/cover;
   position: absolute;
